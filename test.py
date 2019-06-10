@@ -1,1 +1,17 @@
-Ну, удачи.
+from selenium import webdriver
+chrome=webdriver.Chrome()
+chrome.get("https://www.ultimateqa.com/complicated-page/")
+chrome.find_elements_by_link_text("Button")[5].click()
+chrome.find_elements_by_id("s").click()
+chrome.find_elements_by_id("searchsubmit").click()
+chrome.find_elements_by_id("et_pb_contact_name_0").click()
+chrome.find_element_by_link_text("How to fix common Selenium errors?")
+chrome.find_element_by_name("et_pb_contact_message_0")
+chrome.find_element_by_class("et_pb_contact_submit et_pb_button")
+chrome.find_elements_by_id("user_pass_5cfb95c4e156f").click()
+chrome.find_element_by_link_text("Forgot your password?").click()
+chrome.find_element_by_id("et_pb_contact_name_1").click()
+chrome.find_element_by_id("et_pb_contact_message_1").click()
+chrome.find_elements_by_tag_name("p")
+chrome.find_elements_by_xpath('//div[@class="et_pb_column et_pb_column_1_2 et_pb_column_7 et_pb_css_mix_blend_mode_passthrough"]//a[@title="Follow on Twitter"]')[1].click()
+chrome.find_element_by_class("et_pb_contact_submit et_pb_button")
